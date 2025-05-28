@@ -607,12 +607,12 @@
 /*** FAQs Start ***/
 .faq-section .accordion .accordion-item .accordion-header .accordion-button {
     color: var(--bs-white);
-    background: rgba(1, 95, 201, .8);
+    background: var(--bs-dark);
     font-size: 18px;
 }
 
 .faq-section .accordion .accordion-item .accordion-header .accordion-button.collapsed {
-    color: var(--bs-primary);
+    color: var(--bs-dark);
     background: var(--bs-light);
 }
 /*** FAQs End ***/
