@@ -112,7 +112,11 @@
 }
 
 .logo{
-        max-height: 111px;
+    max-height: 111px;
+}
+
+.text-red{
+    color: var(--bs-primary);
 }
 
 
@@ -148,6 +152,7 @@
 .nav-bar {
     background: var(--bs-white);
     transition: 1s;
+
 }
 
 .navbar-light .navbar-brand img {
@@ -156,7 +161,7 @@
 }
 
 .nav-bar .navbar-light .navbar-brand img {
-    max-height: 111px;
+    max-height: 100px;
 }
 
 .navbar .navbar-nav .nav-item .nav-link {
@@ -607,7 +612,7 @@
 /*** FAQs Start ***/
 .faq-section .accordion .accordion-item .accordion-header .accordion-button {
     color: var(--bs-white);
-    background: var(--bs-dark);
+    background: var(--bs-primary);
     font-size: 18px;
 }
 
@@ -895,7 +900,7 @@
 
 /*** Footer Start ***/
 .footer {
-    background: var(--bs-dark);
+    background: linear-gradient(to right,black, rgb(10, 9, 9), #890010);
 }
 
 .footer .footer-item {
