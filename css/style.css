@@ -281,16 +281,16 @@
 }
 
 .slider-1{
-   background: url('img/3733.jpg') center center/cover no-repeat;
+   background: url('../img/3733.jpg') center center/cover no-repeat;
 }
 .slider-2{
-   background: url('img/3028.jpg') center center/cover no-repeat;
+   background: url('../img/3028.jpg') center center/cover no-repeat;
 }
 .slider-3{
-   background: url('img/16899.jpg') center center/cover no-repeat;
+   background: url('../img/16899.jpg') center center/cover no-repeat;
 }
 .slider-4{
-   background: url('img/48752.jpg') center center/cover no-repeat;
+   background: url('../img/48752.jpg') center center/cover no-repeat;
 }
 
 .header-carousel .owl-nav .owl-prev,
@@ -374,7 +374,7 @@
 .bg-breadcrumb {
     position: relative;
     overflow: hidden;
-    background: linear-gradient(rgba(1, 95, 201, 0.9), rgba(0, 0, 0, 0.2)), url(img/water-famous-architecture-finance-shanghai-tower.jpg);
+    background: linear-gradient(rgba(1, 95, 201, 0.9), rgba(0, 0, 0, 0.2)), url(../img/water-famous-architecture-finance-shanghai-tower.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -779,7 +779,7 @@
 }
 
 .business-formation{
-    background: url("img/104046.jpg") center center/cover no-repeat;
+    background: url("../img/104046.jpg") center center/cover no-repeat;
 }
 
 .stp-wrpa {
@@ -795,7 +795,7 @@
     align-items: center;
     flex: 0 0 32%;
     position: relative;
-    background-image: url(img/arrow-icon.png);
+    background-image: url(../img/arrow-icon.png);
     background-repeat: no-repeat;
     background-position: right center;
     padding: 22px 0px;
