@@ -161,7 +161,7 @@
 }
 
 .nav-bar .navbar-light .navbar-brand img {
-    max-height: 100px;
+    max-height: 80px;
 }
 
 .navbar .navbar-nav .nav-item .nav-link {
@@ -282,7 +282,7 @@
 
 /*** Carousel Hero Header Start ***/
 .header-carousel .header-carousel-item {
-    height: 700px;
+    height: 100vh;
 }
 
 .slider-1{
