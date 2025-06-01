@@ -4,6 +4,9 @@
     --bs-dark: #000000; 
 }
 
+  .text-indent {
+    text-indent: 3.5em;
+  }
 
 /*** Spinner Start ***/
 #spinner {
@@ -150,10 +153,50 @@
 
 /*** Navbar Start ***/
 .nav-bar {
-    background: var(--bs-white);
+    background: #410B09 ;
     transition: 1s;
 
 }
+/* Dropdown styling */
+.services-dropdown {
+    min-width: 100%;
+    max-width: 600px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+/* Service headers */
+.services-dropdown .dropdown-header {
+    font-size: 15px;
+    font-weight: 600;
+    color: #333;
+    padding-bottom: 0.5rem;
+}
+
+/* Dropdown items */
+.services-dropdown .dropdown-item {
+    padding: 8px 0;
+    font-size: 14px;
+    color: #555;
+    transition: all 0.3s ease;
+}
+
+/* Hover effect */
+.services-dropdown .dropdown-item:hover {
+    padding-left: 8px;
+}
+
+/* Responsive stacking */
+@media (max-width: 767.98px) {
+    .services-dropdown {
+        flex-direction: column;
+        max-width: 100%;
+        text-align: center;
+    }
+}
+
 
 .navbar-light .navbar-brand img {
     max-height: 60px;
@@ -172,6 +215,8 @@
     display: flex;
     align-items: center;
     padding: 15px;
+    color:#000000;
+    gap: 5px;
 }
 
 .navbar-light .navbar-nav .nav-item:hover,
@@ -229,8 +274,7 @@
 }
 
 .dropdown .dropdown-menu .dropdown-item:hover {
-    background: var(--bs-primary);
-    color: var(--bs-white);
+    color: var(--bs-dark);
 }
 
 @media (min-width: 992px) {
@@ -246,7 +290,6 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        background: var(--bs-light);
         border-radius: 10px;
     }
 
@@ -379,7 +422,7 @@
 .bg-breadcrumb {
     position: relative;
     overflow: hidden;
-    background: linear-gradient(rgba(1, 95, 201, 0.9), rgba(0, 0, 0, 0.2)), url(../img/water-famous-architecture-finance-shanghai-tower.jpg);
+    background: linear-gradient(rgba(216, 191, 0, 0.467), rgba(0, 0, 0, 0.2)), url(../img/water-famous-architecture-finance-shanghai-tower.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -813,6 +856,11 @@
 .step-box-light{
     background: linear-gradient(to bottom right, #f5f7fa, #c3cfe2);
 }
+
+@media (max-width: 991px) {
+    
+}
+
 
 
 
