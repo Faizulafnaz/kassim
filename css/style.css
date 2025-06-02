@@ -194,6 +194,11 @@
     transition: all 0.3s ease;
 }
 
+.services-dropdown .dropdown-item.active {
+    background: none !important;
+    color: var(--bs-gold);
+}
+
 /* Hover effect */
 .services-dropdown .dropdown-item:hover {
     padding-left: 8px;
@@ -216,7 +221,7 @@
 }
 
 .nav-bar .navbar-light .navbar-brand img {
-    max-height: 80px;
+    max-height: 93px;
 }
 
 .navbar .navbar-nav .nav-item .nav-link {
@@ -231,6 +236,9 @@
     color:#ffffff;
     gap: 6px;
     font-weight: 200;
+}
+.navbar .navbar-nav .nav-item .dropdown-toggle.active{
+    color: var(--bs-gold);
 }
 
 .navbar-light .navbar-nav .nav-item:hover,
@@ -367,13 +375,13 @@
 
 /*** Carousel Hero Header Start ***/
 .header-carousel .header-carousel-item {
-    height: 100vh;  
+    height: 110vh;  
 }
 
 .header-carousel{
     position: relative;
     z-index: 1;
-    margin-top: -80px;
+    margin-top: -93px;
 }
 
 .slider-1{
@@ -482,7 +490,7 @@
     background-size: cover;
     padding: 80px 0 20px 0;
     transition: 0.5s;
-    margin-top: -80px;
+    margin-top: -93px;
 }
 
 .bg-breadcrumb .breadcrumb {
@@ -1085,6 +1093,34 @@
     color: var(--bs-white);
 }
 /*** Footer End ***/
+
+.whatsapp-float {
+    position: fixed;
+    bottom: 100px;
+    right: 31px;
+    z-index: 9999;
+    width: 60px;
+    height: 60px;
+    background-color: #25D366; /* WhatsApp green */
+    border-radius: 50%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: transform 0.2s ease-in-out;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1);
+}
+
+.whatsapp-float i {
+    color: white; 
+}
+
+
+
 
 
 /*** copyright Start ***/
