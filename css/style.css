@@ -222,6 +222,7 @@
 
 .nav-bar .navbar-light .navbar-brand img {
     max-height: 93px;
+    padding: 4px;
 }
 
 .navbar .navbar-nav .nav-item .nav-link {
@@ -336,7 +337,7 @@
     .navbar .navbar-nav {
         width: 100%;
         display: flex;
-        justify-content: center;
+        justify-content: end;
         align-items: center;
         border-radius: 10px;
         gap: 34px;
