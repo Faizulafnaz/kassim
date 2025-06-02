@@ -502,6 +502,12 @@
     color: var(--bs-white);
 }
 
+@media (max-width: 991px) {
+    .bg-breadcrumb{
+        margin-top: 0px;
+    }
+}
+
 
 
 /*** Single Page Hero Header End ***/
@@ -1118,6 +1124,10 @@
 
 .whatsapp-float i {
     color: white; 
+}
+
+.text-footer{
+    color: rgb(0, 0, 0);
 }
 
 
