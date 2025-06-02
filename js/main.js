@@ -19,9 +19,9 @@
     // Sticky Navbar
     $(window).scroll(function () {
         if ($(this).scrollTop() > 45) {
-            $('.nav-bar').addClass('sticky-top shadow-sm').css('top', '0px');
+            $('.nav-bar').addClass('shadow-sm scrolled');
         } else {
-            $('.nav-bar').removeClass('sticky-top shadow-sm').css('top', '-100px');
+            $('.nav-bar').removeClass('shadow-sm scrolled');
         }
     });
 

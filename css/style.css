@@ -1,7 +1,11 @@
 
 :root {
-    --bs-primary: #890010;
-    --bs-dark: #000000; 
+    /* --bs-primary: #890010;
+    --bs-dark: #000000;  */
+
+    --bs-primary: #000000 ;
+    --bs-dark: #F5AB24;
+    --bs-gold:#F5AB24  ;
 }
 
   .text-indent {
@@ -153,9 +157,16 @@
 
 /*** Navbar Start ***/
 .nav-bar {
-    background: #410B09 ;
-    transition: 1s;
+    background-color: transparent;
+    transition: background-color 0.5s ease, box-shadow 0.5s ease;
+    z-index: 1030;
+}
 
+
+
+.nav-bar.scrolled {
+    background-color: #000000d2;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 /* Dropdown styling */
 .services-dropdown {
@@ -186,6 +197,7 @@
 /* Hover effect */
 .services-dropdown .dropdown-item:hover {
     padding-left: 8px;
+    background: none;
 }
 
 /* Responsive stacking */
@@ -211,22 +223,33 @@
     padding: 0;
 }
 
-.navbar .navbar-nav .nav-item {
+.navbar .navbar-nav .nav-item,  
+.navbar .navbar-nav .nav-item .dropdown-toggle{
     display: flex;
     align-items: center;
-    padding: 15px;
-    color:#000000;
-    gap: 5px;
+    padding: 0px;
+    color:#ffffff;
+    gap: 6px;
+    font-weight: 200;
 }
 
 .navbar-light .navbar-nav .nav-item:hover,
 .navbar-light .navbar-nav .nav-item.active,
 .navbar-light .navbar-nav .nav-item:hover .nav-link,
 .navbar-light .navbar-nav .nav-item.active .nav-link {
-    color: var(--bs-primary);
+    color: var(--bs-gold);
 }
 
 @media (max-width: 991px) {
+    .nav-bar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1050;
+
+  }
+
     .navbar {
         padding: 20px 0;
     }
@@ -253,7 +276,7 @@
         display: flex;
         margin-top: 20px;
         padding-bottom: 20px;
-        background: var(--bs-light);
+        background: transparent;
         border-radius: 10px;
     }
 
@@ -261,6 +284,22 @@
         padding: 8px 15px;
         border: 1px solid var(--bs-primary);
         color: var(--bs-primary);
+    }
+
+    .navbar-collapse {
+        background: #000000bd; /* Set your desired background color */
+        padding: 1rem;
+        border-radius: 10px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    }
+
+    .navbar-nav .nav-link {
+        color: #000; /* Ensure links are readable */
+        padding: 10px 0;
+    }
+
+    .navbar-toggler {
+        border: none;
     }
 }
 
@@ -285,12 +324,15 @@
         justify-content: end;
     }
 
+
     .navbar .navbar-nav {
         width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
         border-radius: 10px;
+        gap: 34px;
+        font-size: 17px;
     }
 
     .navbar .navbar-nav .nav-btn {
@@ -325,7 +367,13 @@
 
 /*** Carousel Hero Header Start ***/
 .header-carousel .header-carousel-item {
-    height: 100vh;
+    height: 100vh;  
+}
+
+.header-carousel{
+    position: relative;
+    z-index: 1;
+    margin-top: -80px;
 }
 
 .slider-1{
@@ -387,6 +435,7 @@
 }
 
 @media (max-width: 991px) {
+    
     .header-carousel .header-carousel-item .carousel-caption {
         padding-top: 45px;
     }
@@ -415,6 +464,11 @@
         margin-left: 45px;
     }
 }
+
+.header-text{
+    padding-top: 100px;
+}
+
 /*** Carousel Hero Header End ***/
 
 
@@ -422,12 +476,13 @@
 .bg-breadcrumb {
     position: relative;
     overflow: hidden;
-    background: linear-gradient(rgba(216, 191, 0, 0.467), rgba(0, 0, 0, 0.2)), url(../img/water-famous-architecture-finance-shanghai-tower.jpg);
+    background: linear-gradient(rgba(67, 67, 67, 0.467), rgba(0, 0, 0, 0.2)), url(../img/water-famous-architecture-finance-shanghai-tower.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 60px 0 60px 0;
+    padding: 80px 0 20px 0;
     transition: 0.5s;
+    margin-top: -80px;
 }
 
 .bg-breadcrumb .breadcrumb {
@@ -437,6 +492,9 @@
 .bg-breadcrumb .breadcrumb .breadcrumb-item a {
     color: var(--bs-white);
 }
+
+
+
 /*** Single Page Hero Header End ***/
 
 
@@ -803,28 +861,7 @@
 }
 /*** Team End ***/
 
-.step-card {
-    transition: all 0.3s ease-in-out;
-}
-.step-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
-}
-.step-circle {
-    width: 60px;
-    height: 60px;
-    line-height: 60px;
-    background-color: #0d6efd;
-    color: #fff;
-    font-size: 1.5rem;
-    font-weight: bold;
-    border-radius: 50%;
-    position: absolute;
-    top: -30px;
-    left: 20px;
-    z-index: 1;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-}
+
 
 .business-formation{
     background: url("../img/104046.jpg") center center/cover no-repeat;
@@ -857,11 +894,31 @@
     background: linear-gradient(to bottom right, #f5f7fa, #c3cfe2);
 }
 
+  .step-box:last-child {
+    background-image: none; /* no arrow for last step */
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+
 @media (max-width: 991px) {
-    
+
+  .stp-wrpa {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .step-box {
+    width: 100%;
+    flex-direction: row;
+    background-position: center bottom;
+    background-size: 25px auto;
+    padding-bottom: 30px;
+    margin-bottom: 20px;
+    background-image: none;
+    justify-content: center;
+  }
+
 }
-
-
 
 
 /*** Testimonial Start ***/
@@ -948,7 +1005,7 @@
 
 /*** Footer Start ***/
 .footer {
-    background: linear-gradient(to right,black, rgb(10, 9, 9), #890010);
+    background: linear-gradient(to right,black, rgb(10, 9, 9), #F5AB24);
 }
 
 .footer .footer-item {
@@ -967,7 +1024,7 @@
 }
 
 .footer .footer-item a:hover {
-    color: var(--bs-primary);
+    color: var(--bs-dark);
 }
 
 .footer .footer-item .footer-btn a,
